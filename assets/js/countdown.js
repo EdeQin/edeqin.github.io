@@ -9,8 +9,8 @@ $(function(){
 		var now = new Date()
 		var end = new Date(end_date)
 		var date = new Date()
-		var left_time = ((end.getTime()-now.getTime())/60/60/24/1000).toFixed(2)
-	  $("#days").html(left_time)
+		var left_time = ((end.getTime()-now.getTime())/60/60/24/1000)
+	  $("#days").html(left_time.toFixed(2))
 	  $("#old_time").html($.format.date(minusDays(new Date(), left_time),"yyyy-MM-dd HH:mm:ss"))
 	}, 1000);
 
