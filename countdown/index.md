@@ -1,5 +1,4 @@
 ---
-layout: countdown
 permalink: /countdown
 ---
 

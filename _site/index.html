@@ -1,131 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"> 
-  <title>烨烨的课表</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
-  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    @font-face {
-        font-family: 'fzjunhjw';
-        src: url(../assets/FZJunHJW_Zhun.TTF) format('truetype');
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    table {
-      border-collapse: collapse;
-    }
+<link rel="icon" href="/assets/images/logo.png">
 
-    td, th {
-      border: 1px solid Black;
-      padding: 5px 15px;
-    }
-    .table > thead > tr > th  { background-color: #8a8a8a; }    
-    .table > tbody > tr > td {
-         vertical-align: middle;
-        }
-    .num {background-color: #d4d1d1}
+<title>Home | 小覃小站</title>
 
-  </style>
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Home | 覃（tán）思</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Home" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="欢迎来到小覃小站，这里会分享各种生活感悟和记录~" />
+<meta property="og:description" content="欢迎来到小覃小站，这里会分享各种生活感悟和记录~" />
+<link rel="canonical" href="http://192.168.137.233:4000/" />
+<meta property="og:url" content="http://192.168.137.233:4000/" />
+<meta property="og:site_name" content="覃（tán）思" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<script type="application/ld+json">
+{"@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://192.168.137.233:4000/assets/images/logo.png"}},"url":"http://192.168.137.233:4000/","name":"覃（tán）思","description":"欢迎来到小覃小站，这里会分享各种生活感悟和记录~","headline":"Home","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+<link href="/assets/css/prism.css" rel="stylesheet">
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
 </head>
+
+
+
+
 <body>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<!-- Begin Sidebar Navigation
+================================================== -->
+
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>导航</h3>
+        <li><a href="/">主页</a></li>
+        <!-- <li><a href="/about">关于 <span class="badge badge-primary">Memoirs Jekyll Theme</span></a></li>     -->
+        <li><a href="/contact">联系我</a></li>       
+    </ul>   
+</nav>
+
+<script src="/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="site-content  firstpage ">
 
 <div class="container">
-  <h2></h2>
-  <p></p>                        
-  <table class="table" style="font-family: 'fzjunhjw';font-size: large; ">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>周一</th>
-        <th>周二</th>
-        <th>周三</th>
-        <th>周四</th>
-        <th>周五</th>
-        <th>周六</th>
-        <th>周日</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="background-color: #4ba03b">7:00~8:00</td>
-        <td style="background-color: #4ba03b">bec阅读</td>
-        <td style="background-color: #4ba03b">阅读单词</td>
-        <td style="background-color: #4ba03b">bec阅读</td>
-        <td style="background-color: #4ba03b">阅读单词</td>
-        <td style="background-color: #4ba03b">bec阅读</td>
-        <td style="background-color: #4ba03b">阅读单词</td>
-        <td rowspan="2" style="background-color: #4ba03b">听力精听</td>
-      </tr>
-      <tr>
-        <td class="num">第一节</td>
-        <td rowspan="4" style="background-color: #ffff00;">雅思</td>
-        <td rowspan="4" style="background-color: #ffff00;">雅思</td>
-        <td rowspan="4" style="background-color: #ffff00;">国际经济</td>
-        <td rowspan="4" style="background-color: #ffff00;">外贸跟单</td>
-        <td rowspan="4" style="background-color: #2cc3bc">一周作业</td>
-        <td rowspan="4" style="background-color: #e85a4b">证券资格刷题+看视频</td>
-      </tr>
-      <tr>
-        <td class="num">第二节</td>
-        <td rowspan="2" style="background-color: #4ba03b">口语</td>
-      </tr>
-      <tr>
-        <td class="num">第三节</td>
-      </tr>
-      <tr>
-        <td class="num">第四节</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td class="num">第五节</td>
-        <td rowspan="4" style="background-color: #ffff00;">国贸实务</td>
-        <td rowspan="2" style="background-color: #ffff00;">客户关系</td>
-        <td rowspan="4" style="background-color: #ffff00;">国贸实务</td>
-        <td rowspan="2" style="background-color: #ffff00;">国际结算</td>
-        <td rowspan="2" style="background-color: #ffff00;">消费者行为</td>
-        <td rowspan="4" style="background-color: #e8a59e">健身房</td>
-        <td rowspan="4" style="background-color: #e8a59e">健身</td>
-      </tr>
-      <tr>
-        <td class="num">第六节</td>
-      </tr>
-      <tr>
-        <td class="num">第七节</td>
-        <td></td>
-        <td></td>
-        <td rowspan="2" style="background-color: #e8a59e">健身房</td>
-      </tr>
-      <tr>
-        <td class="num">第八节</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td class="num">第九节</td>
-        <td rowspan="3" style="background-color: #e85a4b">政券资格笔记</td>
-        <td rowspan="2" style="background-color: #ffff00;">证券</td>
-        <td rowspan="3" style="background-color: #e85a4b">政券资格笔记</td>
-        <td rowspan="2" style="background-color: #ffff00;">雅思</td>
-        <td></td>
-        <td rowspan="3" style="background-color: #e85a4b">政券资格笔记</td>
-        <td rowspan="3" style="background-color: #e85a4b">政券资格笔记</td>
-      </tr>
-      <tr>
-        <td class="num">第十节</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td class="num">9:00~10:30</td>
-        <td style="background-color: #e85a4b">证券资格笔记</td>
-        <td style="background-color: #e85a4b">证券资格笔记</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
+    <!-- Site Logo/Name
+    ================================================== -->
+   
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.png" alt="小覃小站">
+    </a>  
+   
+
+    <!-- Site Tag
+    ================================================== -->
+    
+        <p class="sitetag">
+            欢迎来到小覃小站，这里会分享各种生活感悟和记录~
+        </p>
+    
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <!-- Posts Index
+================================================== -->
+<div class="blog-grid-container">
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/poem-1/">
+                
+
+                    
+                        <img class="img-thumb" src="https://edmondo.oss-cn-beijing.aliyuncs.com/my_site/public/pictures/B324F0AC786677D5CB6626827A9536A7.jpg" alt="送给自己二十五岁的词"> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/poem-1/">送给自己二十五岁的词</a>
+                
+                <div class="mb-2 mt-2 font-weight-normal">
+                <div class="rating-holder">
+<div class="c-rating c-rating--regular" data-rating-value="4.5">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
 </div>
+</div>
+                </div>
+                
+            </h2>
+            <h4 class="card-text">临江仙·自题二十五岁
+
+巴山沪水他乡客，二十五季霜寒。曾怀壮志胜苍天。树犹如此，庸碌盼来年。
+
+时光不解青春意，秋风又改朱颜。独尝苦露盼甘甜。喜悲难料，闲坐又思覃。
+
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&d=mm&r=x" alt="">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href=""></a></span> 
+                
+                <span class="post-date">04 Nov 2021</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/words-of-oct/">
+                
+
+                    
+                        <img class="img-thumb" src=" https://edmondo.oss-cn-beijing.aliyuncs.com/my_site/public/pictures/IMG_20211104_001524_edit_1209139519248308.jpg" alt="10月份的字"> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/words-of-oct/">10月份的字</a>
+                
+                <div class="mb-2 mt-2 font-weight-normal">
+                <div class="rating-holder">
+<div class="c-rating c-rating--regular" data-rating-value="4.5">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+</div>
+                </div>
+                
+            </h2>
+            <h4 class="card-text">想写的不多，渐渐掌握了“口”字的技巧，上宽下窄，右肥左瘦。
+
+  坚持就是胜利
+
+
+每天打卡！
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&d=mm&r=x" alt="">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href=""></a></span> 
+                
+                <span class="post-date">30 Oct 2021</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/words-of-oct-1/">
+                
+
+                    
+                        <img class="img-thumb" src=" https://edmondo.oss-cn-beijing.aliyuncs.com/my_site/public/pictures/IMG_20211102_235722.jpg" alt="10月份的字（第二篇）"> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/words-of-oct-1/">10月份的字（第二篇）</a>
+                
+                <div class="mb-2 mt-2 font-weight-normal">
+                <div class="rating-holder">
+<div class="c-rating c-rating--regular" data-rating-value="4.5">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+</div>
+                </div>
+                
+            </h2>
+            <h4 class="card-text">10月的另外一些字
+
+  坚持就是胜利
+
+
+每天打卡！
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&d=mm&r=x" alt="">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href=""></a></span> 
+                
+                <span class="post-date">30 Oct 2021</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+</div>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<span class="navigation" role="navigation">
+    
+</span>
+</div>
+
+    </div>
+
+    
+    <!-- Newsletter
+    ================================================== -->
+    <div class="newsletter text-center">
+        <span class="h4"><img src="/assets/images/logo.png" class="newsletter-logo" alt="覃（tán）思"> &nbsp; 有问题也可以给小覃的 <b>微信公众号（立青花园）</b> 留言哦</span>
+    </div>
+    
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center text-lg-left">
+                Copyright © 2021 小覃小站 
+            </div>
+            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/assets/js/prism.js"></script>
+
+<script src="/assets/js/theme.js"></script>
+
+
+
+
 
 </body>
 </html>
